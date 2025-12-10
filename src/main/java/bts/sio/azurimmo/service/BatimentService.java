@@ -2,6 +2,7 @@ package bts.sio.azurimmo.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,8 +19,19 @@ public class BatimentService {
     private BatimentRepository batimentRepository;
 
     public Optional<BatimentDTO> getBatimentDTO(Long id) {
-        return batimentRepository.findById(id)
+    	return batimentRepository.findById(id)
                 .map(BatimentMapper::toDTO);
+}
+    public List<BatimentDTO> getBatimentsDTO() {
+        return batimentRepository.findAll()
+                                 .stream()
+                                 .map(BatimentMapper::toDTO)
+                                 .collect(Collectors.toList());
+}
+    public BatimentDTO saveBatimentDTO(BatimentDTO dto) {
+        Batiment entity = BatimentMapper.toEntity(dto);
+        Batiment saved = batimentRepository.save(entity);
+        return BatimentMapper.toDTO(saved);
     }
 }
 

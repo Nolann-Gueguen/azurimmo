@@ -30,5 +30,14 @@ public class AppartementService {
 	 public List<Appartement> getSurfaceGreaterThan(float surface) {
 	        return appartementRepository.findBySurfaceGreaterThan(surface);
 	 }
+	 public List<Appartement> getAllAppartements() {
+		    return appartementRepository.findAll();
+		}
+
+		public Appartement getAppartementById(Long id) {
+		    return appartementRepository.findById(id)
+		        .orElseThrow(() -> new RuntimeException("Appartement non trouvé"));
+		}
+
 	 
 }
