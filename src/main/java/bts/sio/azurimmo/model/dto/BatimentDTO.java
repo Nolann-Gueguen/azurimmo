@@ -10,6 +10,6 @@ import lombok.Setter;
 public class BatimentDTO {
 	private String adresse;
     private String ville;
-    private List<AppartementDTO> appartement;
+    private List<AppartementDTO> appartements;
 
 }
