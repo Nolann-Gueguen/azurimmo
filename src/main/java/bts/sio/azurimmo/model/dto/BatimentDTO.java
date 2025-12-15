@@ -12,5 +12,6 @@ public class BatimentDTO {
     private String ville;
     private List<AppartementDTO> appartements;
     private List<GerantDTO> gerants;
+    
 
 }

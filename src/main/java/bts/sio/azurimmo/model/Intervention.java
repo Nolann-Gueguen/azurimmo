@@ -2,6 +2,8 @@ package bts.sio.azurimmo.model;
 
 import java.sql.Time;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -41,5 +43,9 @@ public class Intervention {
 	    @JoinColumn(name = "appartement_id")
 	    private Appartement appartement;
 	 
+	 @ManyToOne
+	    @JoinColumn(name = "typeIntervention_id")
+	    @JsonBackReference
+	    private TypeIntervention typeIntervention;
 	 
 }
