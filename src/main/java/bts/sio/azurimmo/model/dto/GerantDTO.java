@@ -9,7 +9,7 @@ import lombok.Setter;
 public class GerantDTO {
 	 private String prenom;
 	 private String nom;
-	 private String tel;
+	 private int tel;
 	 private String mail;
 
 }

@@ -18,7 +18,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
-@RequestMapping("/api/Gerants")
+@RequestMapping("/api/gerants")
 @Tag(name = "Gerants", description = "Gestion des Gerants")
 public class GerantController {
 
@@ -27,30 +27,22 @@ public class GerantController {
     
    
     @GetMapping("/{GerantId}")
-    @Operation(summary = "Récupère un bâtiment par son ID")
+    @Operation(summary = "Récupère un gérant par son ID")
     public Optional<GerantDTO> getGerantDTO(@PathVariable long GerantId) {
         return gerantService.getGerantDTO(GerantId);
     }
 
     
-    @GetMapping("/re/{GerantId}")
-    @Operation(summary = "Récupère un bâtiment par son ID avec gestion des erreurs")
-    public ResponseEntity<GerantDTO> getGerantReDTO(@PathVariable long GerantId) {
-        return gerantService.getGerantDTO(GerantId)
-                              .map(ResponseEntity::ok)
-                              .orElse(ResponseEntity.notFound().build());
-    }
-    
     
     @GetMapping("/")
-    @Operation(summary = "Récupère tous les bâtiments")
+    @Operation(summary = "Récupère tous les gérants")
     public List<GerantDTO> getGerants() {
         return gerantService.getGerantsDTO(); 
     }
     
     
     @PostMapping("/")
-    @Operation(summary = "Créer un nouveau bâtiment", description = "Enregistre un bâtiment à partir des informations fournies.")
+    @Operation(summary = "Créer un nouveau gérant", description = "Enregistre un gérant à partir des informations fournies.")
     public ResponseEntity<GerantDTO> createGerant(@RequestBody GerantDTO dto) {
         GerantDTO savedDTO = gerantService.saveGerantDTO(dto);
         return ResponseEntity.status(201).body(savedDTO);

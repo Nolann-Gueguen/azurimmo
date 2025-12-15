@@ -29,4 +29,9 @@ public class Appartement {
     @JoinColumn(name = "batiment_id")
     @JsonBackReference
     private Batiment batiment;
+    
+    @ManyToOne
+    @JoinColumn(name = "intervention_id")
+    private Intervention intervention;
+
 }
