@@ -12,9 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import bts.sio.azurimmo.model.dto.GerantDTO;
 import bts.sio.azurimmo.model.dto.PaiementLoyerDTO;
-import bts.sio.azurimmo.service.GerantService;
 import bts.sio.azurimmo.service.PaiementLoyerService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

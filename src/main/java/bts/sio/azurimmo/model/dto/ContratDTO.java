@@ -1,10 +1,9 @@
 package bts.sio.azurimmo.model.dto;
 
 import java.util.Date;
+import java.util.List;
 
-import bts.sio.azurimmo.model.Appartement;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,4 +17,6 @@ public class ContratDTO {
 	 private Date dateDebut;
 	 private Date dateFin;
 	 private String statut;
+	 private List<LocataireDTO> locataires;
+
 }
