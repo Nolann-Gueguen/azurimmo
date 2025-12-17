@@ -29,4 +29,7 @@ public class Appartement {
     @JoinColumn(name = "batiment_id")
     @JsonBackReference
     private Batiment batiment;
+    
+    
+
 }

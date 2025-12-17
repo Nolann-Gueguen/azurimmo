@@ -31,15 +31,6 @@ public class BatimentController {
     public Optional<BatimentDTO> getBatimentDTO(@PathVariable long batimentId) {
         return batimentService.getBatimentDTO(batimentId);
     }
-
-    
-    @GetMapping("/re/{batimentId}")
-    @Operation(summary = "Récupère un bâtiment par son ID avec gestion des erreurs")
-    public ResponseEntity<BatimentDTO> getBatimentReDTO(@PathVariable long batimentId) {
-        return batimentService.getBatimentDTO(batimentId)
-                              .map(ResponseEntity::ok)
-                              .orElse(ResponseEntity.notFound().build());
-    }
     
     
     @GetMapping("/")

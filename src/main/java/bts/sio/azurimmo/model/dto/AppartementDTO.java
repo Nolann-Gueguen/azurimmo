@@ -1,5 +1,7 @@
 package bts.sio.azurimmo.model.dto;
 
+import java.util.List;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,5 +12,7 @@ public class AppartementDTO {
 	 private String numero;
 	 private String description;
 	 private Float surface;
+	 private List<ContratDTO> contrats;
+
 
 }

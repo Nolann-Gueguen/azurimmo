@@ -1,6 +1,5 @@
 package bts.sio.azurimmo.model.mapper;
 
-import java.util.Collections;
 import java.util.stream.Collectors;
 
 import bts.sio.azurimmo.model.Batiment;

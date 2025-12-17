@@ -33,5 +33,8 @@ public class Batiment {
 	 
 	 @OneToMany(mappedBy = "batiment")
 	 private List<Appartement> appartements;
+	 
+	 @OneToMany(mappedBy = "batiment")
+	 private List<Gerant> gerants;
 
 }
