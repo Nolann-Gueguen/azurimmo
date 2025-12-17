@@ -42,4 +42,8 @@ public class Contrat {
     @ManyToOne
     @JoinColumn(name = "appartement_id")
     private Appartement appartement;
+    
+    @ManyToOne
+    @JoinColumn(name = "locataire_id")
+    private Locataire locataire;
 }

@@ -25,7 +25,7 @@ public class Locataire {
 	 private String nom;
 	 
 	 @Column(name="tel")
-	 private String tel;
+	 private int tel;
 
 	 @Column(name="mail")
 	 private String mail;

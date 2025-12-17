@@ -11,5 +11,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 @Repository
 public interface ContratRepository extends JpaRepository<Contrat, Long> {
 	List<Contrat> findByAppartement_Id(long id);
+	List<Contrat> findByLocataire_Id(long id);
 	
 }

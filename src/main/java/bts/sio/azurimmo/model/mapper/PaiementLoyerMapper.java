@@ -1,9 +1,6 @@
 package bts.sio.azurimmo.model.mapper;
-import java.util.Date;
 
-import bts.sio.azurimmo.model.Gerant;
 import bts.sio.azurimmo.model.PaiementLoyer;
-import bts.sio.azurimmo.model.dto.GerantDTO;
 import bts.sio.azurimmo.model.dto.PaiementLoyerDTO;
 
 public class PaiementLoyerMapper {
