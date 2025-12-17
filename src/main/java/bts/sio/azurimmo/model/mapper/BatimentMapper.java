@@ -6,7 +6,7 @@ import bts.sio.azurimmo.model.Batiment;
 import bts.sio.azurimmo.model.dto.BatimentDTO;
 
 public class BatimentMapper {
-	
+	//commit
 	public static BatimentDTO toDTO(Batiment b) {
         if (b == null) return null;
 
