@@ -7,13 +7,10 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import bts.sio.azurimmo.model.Intervention;
 import bts.sio.azurimmo.model.TypeIntervention;
-import bts.sio.azurimmo.model.dto.InterventionDTO;
 import bts.sio.azurimmo.model.dto.TypeInterventionDTO;
-import bts.sio.azurimmo.repository.InterventionRepository;
 import bts.sio.azurimmo.repository.TypeInterventionRepository;
-import bts.sio.azurimmo.model.mapper.InterventionMapper;
+
 import bts.sio.azurimmo.model.mapper.TypeInterventionMapper;
 
 @Service

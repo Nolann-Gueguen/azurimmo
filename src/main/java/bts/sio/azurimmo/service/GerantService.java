@@ -8,11 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import bts.sio.azurimmo.model.Gerant;
-import bts.sio.azurimmo.model.dto.BatimentDTO;
 import bts.sio.azurimmo.model.dto.GerantDTO;
-import bts.sio.azurimmo.repository.BatimentRepository;
 import bts.sio.azurimmo.repository.GerantRepository;
-import bts.sio.azurimmo.model.mapper.BatimentMapper;
 import bts.sio.azurimmo.model.mapper.GerantMapper;
 
 @Service

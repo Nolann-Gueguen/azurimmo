@@ -2,7 +2,6 @@ package bts.sio.azurimmo.repository;
 
 import org.springframework.stereotype.Repository;
 
-import bts.sio.azurimmo.model.Appartement;
 import bts.sio.azurimmo.model.Gerant;
 
 import java.util.List;

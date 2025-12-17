@@ -12,9 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import bts.sio.azurimmo.model.dto.InterventionDTO;
 import bts.sio.azurimmo.model.dto.TypeInterventionDTO;
-import bts.sio.azurimmo.service.InterventionService;
 import bts.sio.azurimmo.service.TypeInterventionService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

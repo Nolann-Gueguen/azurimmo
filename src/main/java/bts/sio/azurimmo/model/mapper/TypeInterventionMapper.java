@@ -1,7 +1,5 @@
 package bts.sio.azurimmo.model.mapper;
-import bts.sio.azurimmo.model.Intervention;
 import bts.sio.azurimmo.model.TypeIntervention;
-import bts.sio.azurimmo.model.dto.InterventionDTO;
 import bts.sio.azurimmo.model.dto.TypeInterventionDTO;
 public class TypeInterventionMapper {
 	

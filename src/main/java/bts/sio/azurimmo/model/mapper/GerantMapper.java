@@ -1,10 +1,7 @@
 package bts.sio.azurimmo.model.mapper;
 
-import java.util.stream.Collectors;
 
-import bts.sio.azurimmo.model.Batiment;
 import bts.sio.azurimmo.model.Gerant;
-import bts.sio.azurimmo.model.dto.BatimentDTO;
 import bts.sio.azurimmo.model.dto.GerantDTO;
 
 public class GerantMapper {
